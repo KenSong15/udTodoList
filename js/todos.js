@@ -24,6 +24,9 @@ $("input[type='text']").keypress(function (event) {
         let inStr = $(this).val();
         $(this).val("");
         //增加ul里面的HTML内容
-        $("ul").append("<li><span>X </span>" + inStr + "</li>")
+        $("ul").append("<li><span><i class=\'fa fa-trash\'></i></span>" + inStr + "</li>")
     }
 });
+
+//用jQuery实现输入域的现实和隐藏
+$(".fa-plus").click(()=>$("input[type='text'").fadeToggle());
